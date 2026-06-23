@@ -1,64 +1,41 @@
-# 🥋 Dojo Tracker: Motion-Tracking Strike Analytics
+# 🥋 Dojo Tracker: AI Motion-Tracking Strike Analytics
 
-An ultra-modern, minimalist web application that utilizes advanced C++ computer vision frameworks to analyze martial arts strike velocities (punches and kicks) in real-time. Built with a responsive, gamified glassmorphism interface engineered to drive user engagement and repetitive training loops.
-![Dojo Tracker Interface](Example%20Strike.PNG)
----
+Unleash data-driven martial arts training. Dojo Tracker is a high-performance web application that uses advanced AI motion-tracking to analyze your strike velocities (punches and kicks) instantly. 
 
-## ✨ Features
+Featuring an ultra-sleek, minimalist dark-mode interface with gamified progression mechanics, it turns every training session into an interactive challenge to break your own limits.
 
-* **Gamified Belt Progression Loop:** Instantly maps peak strike speeds to corresponding martial arts belt rankings (White through Grandmaster).
-* **Dopamine-Driven UI Retention:** Integrates browser `localStorage` to track and flash Session Personal Bests, encouraging continuous improvement ("Just one more try").
-* **Dynamic Visual Progression:** Live progress bars tracking exact percentages needed to unlock the next belt tier.
-* **Shareable High-Fidelity Performance Cards:** Dynamically constructs a premium 9:16 social-media-ready digital athletic log embedded inside a Base64 string payload.
-* **Privacy-Centric Architecture:** Processes video frame matrices dynamically inside memory (RAM). Zero video data or user media is cached or stored permanently.
+![Dojo Tracker Interface](Example Strike.PNG)
 
 ---
 
-## 🛠️ Tech Stack & Requirements
+## ⚡ Key Features
 
-* **Backend Framework:** FastAPI (Python 3.11.9, 64-bit strictly required)
-* **ASGI Server:** Uvicorn
-* **Computer Vision Pipeline:** Google MediaPipe Pose Landmarker Engine (BlazePose) & OpenCV
-* **Image Generation Suite:** Pillow (PIL)
-* **Frontend Design System:** Custom CSS Glassmorphism vanilla framework utilizing the *Plus Jakarta Sans* typeface
+* **🔥 Live Personal Bests:** Built-in high-score tracking saves your session records directly in your browser. It challenges you to beat your best strike every time you upload.
+* **🏆 Martial Arts Belt Progression:** Watch your progress bar climb! The system instantly benchmarks your speed and awards you ranks from **White Belt** all the way to **Grandmaster**.
+* **📸 Shareable Athlete Cards:** Automatically generates a premium, vertical (9:16) digital performance log showing your peak speed and rank, ready to save or share on social media.
+* **🔒 100% Private & Local:** Your videos never touch a cloud server. All frame analysis happens completely in your computer's RAM, keeping your training data entirely yours.
 
 ---
-![Dojo Tracker Interface](WebUI.PNG)
-## 🚀 Step-by-Step Installation
 
-### 1. Initialize and Activate Environment
-Ensure you are using a 64-bit installation of Python 3.11.9:
+## 📸 Interface Sneak Peek
+
+![Web UI Showcase](WebUI.PNG)
+
+---
+
+## 🛠️ Built With
+
+* **AI Tracking Core:** Google MediaPipe (BlazePose Engine) & OpenCV
+* **Backend Pipeline:** FastAPI & Uvicorn (Python 3.11.9)
+* **Design System:** Custom HTML5 Vanilla CSS Glassmorphism
+* **Graphics Generation:** Pillow (PIL)
+
+---
+
+## 🚀 Quick Start (Get Running in 2 Minutes)
+
+### 1. Set Up Your Environment
+Make sure you are running a 64-bit Python environment:
 ```bash
 cd C:\PythonStudio\MartialArts_Speed
 .\.venv\Scripts\activate
-2. Install Dependencies
-Install all tracked packages directly via the pinned environment specification sheet:
-
-Bash
-python -m pip install --no-cache-dir -r requirements.txt
-3. Launch the Application Server
-Run the application locally via Uvicorn:
-
-Bash
-python main.py
-🌐 Accessing the Tracker
-Once the server initializes, Uvicorn will listen across all network blocks. Access the UI through your local loopback address:
-
-👉 http://localhost:8000 or http://127.0.0.1:8000
-
-Note: Navigating to http://0.0.0.0:8000 directly in a browser will throw an ERR_ADDRESS_INVALID error.
-
-🛠️ Windows Core Troubleshooting Guide
-If the backend fails to load MediaPipe solutions, cross-verify your system against these two parameters:
-
-Architecture Check (Bitness):
-MediaPipe requires a 64-bit Python architecture. Verify your virtual environment by running:
-
-Bash
-python -c "import platform; print(platform.architecture())"
-Must output ('64bit', 'WindowsPE').
-
-Missing C++ Framework Runtimes:
-If you encounter silent tracking initialization crashes, your operating system is missing the core Microsoft Visual C++ dependencies.
-
-Download the official Microsoft Visual C++ Redistributable (X64) framework patch, install it, and restart your IDE/Terminal environment.
