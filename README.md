@@ -1,7 +1,7 @@
 # 🥋 Dojo Tracker: Motion-Tracking Strike Analytics
 
 An ultra-modern, minimalist web application that utilizes advanced C++ computer vision frameworks to analyze martial arts strike velocities (punches and kicks) in real-time. Built with a responsive, gamified glassmorphism interface engineered to drive user engagement and repetitive training loops.
-![Dojo Tracker Interface](Example%20Strike.png)
+![Dojo Tracker Interface](Example%20Strike.PNG)
 ---
 
 ## ✨ Features
@@ -23,7 +23,7 @@ An ultra-modern, minimalist web application that utilizes advanced C++ computer 
 * **Frontend Design System:** Custom CSS Glassmorphism vanilla framework utilizing the *Plus Jakarta Sans* typeface
 
 ---
-![Dojo Tracker Interface](WebUI.png)
+![Dojo Tracker Interface](WebUI.PNG)
 ## 🚀 Step-by-Step Installation
 
 ### 1. Initialize and Activate Environment
