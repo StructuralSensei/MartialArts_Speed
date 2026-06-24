@@ -4,7 +4,7 @@ Unleash data-driven martial arts training. Dojo Tracker is a high-performance we
 
 Featuring an ultra-sleek, minimalist dark-mode interface with gamified progression mechanics, it turns every training session into an interactive challenge to break your own limits.
 
-![Dojo Tracker Interface](Example Strike.PNG)
+![Dojo Tracker Interface](ExampleStrike.PNG)
 
 ---
 
